@@ -29,7 +29,6 @@ class _ComputerControlState extends State<ComputerControl> {
               Expanded(
                 child: Container(
                   width: double.infinity,
-                  color: Colors.grey,
                   child: MouseController()
                 ),
               ),
