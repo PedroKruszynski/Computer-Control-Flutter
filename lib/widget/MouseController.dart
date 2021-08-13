@@ -13,13 +13,6 @@ class MouseController extends StatefulWidget {
 class _MouseControllerState extends State<MouseController> {
 
   _MouseControllerState () {
-    // gyroscopeEvents.listen((GyroscopeEvent event) {
-    //   // print(event.x.toStringAsFixed(2));
-    //   // print(event.z);
-
-    //   ComputerControlApi.mousePosition(event.x, event.z);
-    // });
-
     accelerometerEvents.listen((AccelerometerEvent event) {
 
       ComputerControlApi.mousePosition(event.x, event.z);
@@ -31,7 +24,6 @@ class _MouseControllerState extends State<MouseController> {
   }
 
   leftClick(doubleTap) async {
-    print(doubleTap);
     ComputerControlApi.mouseLeftClick(doubleTap);
   }
 
